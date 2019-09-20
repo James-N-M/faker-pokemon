@@ -1,0 +1,35 @@
+{
+    "name": "james-n-m/faker-pokemon",
+    "type": "library",
+    "description": "Faker-Pokemon is a Faker provider that generates fake pokemon data for you!",
+    "keywords": [
+        "faker",
+        "pokemon",
+        "faker-pokemon",
+        "pokemon-faker"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "James Moore",
+            "email": "jamesm0025@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "fzaninotto/faker": "^1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Faker\\Provider\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Faker\\Tests\\Provider\\": "tests/Faker"
+        }
+    }
+}
