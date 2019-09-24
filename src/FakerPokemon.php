@@ -4,7 +4,7 @@ namespace Faker\Provider;
 
 use Faker\Generator;
 
-class FakerPokemon extends Base
+class FakerPokemon extends \Faker\Provider\Base
 {
     /**
      * FakerPokemon constructor.
@@ -23,6 +23,51 @@ class FakerPokemon extends Base
      */
     public static function pokemon() : string
     {
-        return "Pikachu";
+        // Create a pokemon object in memory
+        // build up the object and return it
+        // json_encode it so its comes out pretty
+        return 'pokemon_place_holder';
+    }
+
+    /**
+     * Get random pokemon name
+     */
+    public static function pokemonName(): string
+    {
+        return (string) static::randomElement(PokemonData::getPokemonNames());
+    }
+
+    /**
+     * Get random pokemon character name
+     */
+    public static function pokemonCharacterName(): string
+    {
+        return (string) static::randomElement(PokemonData::getCharacterNames());
+    }
+
+    /**
+     * Get random pokemon type
+     *
+     * @return string
+     */
+    public static function pokemonType() : string
+    {
+        return (string) static::randomElement(PokemonData::getPokemonTypes());
+    }
+
+    /**
+     * Get random pokemon location
+     */
+    public static function pokemonLocation(): string
+    {
+        return (string) static::randomElement(PokemonData::getPokemonLocations());
+    }
+
+    /**
+     * Get random pokemon move
+     */
+    public static function pokemonMove(): string
+    {
+        return (string) static::randomElement(PokemonData::getPokemonMoves());
     }
 }

@@ -24,11 +24,6 @@ class FakerPokemonTest extends TestCase
         $this->faker = $faker;
     }
 
-    public function testTest()
-    {
-        $this->assertEquals("Hello", "Hello");
-    }
-
     public function testPokemonName()
     {
         $this->faker->seed(random_int(1, 9999));

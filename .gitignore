@@ -1,2 +1,4 @@
 vendor/
 composer.lock
+.idea
+tests/Faker/.phpunit.result.cache
