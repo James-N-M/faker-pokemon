@@ -10,16 +10,15 @@ class FakerPokemon extends \Faker\Provider\Base
      * FakerPokemon constructor.
      *
      * @param \Faker\Generator $generator
-     */
+    */
     public function __construct(Generator $generator)
     {
         parent::__construct($generator);
     }
 
     /**
-     * Get Pokemon string
+     * Get Pokemon object
      *
-     * @return string
      */
     public static function pokemon() : string
     {
@@ -31,6 +30,7 @@ class FakerPokemon extends \Faker\Provider\Base
 
     /**
      * Get random pokemon name
+     * @return string
      */
     public static function pokemonName(): string
     {
@@ -39,6 +39,7 @@ class FakerPokemon extends \Faker\Provider\Base
 
     /**
      * Get random pokemon character name
+     * @return string
      */
     public static function pokemonCharacterName(): string
     {
@@ -57,6 +58,7 @@ class FakerPokemon extends \Faker\Provider\Base
 
     /**
      * Get random pokemon location
+     * @return string
      */
     public static function pokemonLocation(): string
     {
@@ -65,9 +67,53 @@ class FakerPokemon extends \Faker\Provider\Base
 
     /**
      * Get random pokemon move
+     * @return string
      */
     public static function pokemonMove(): string
     {
         return (string) static::randomElement(PokemonData::getPokemonMoves());
     }
+
+    /**
+     * @param string|null $character
+     * @return null|string
+     */
+    public function quote(string $character = null)
+    {
+        if (null === $character) {
+            return $this->generator->parse(static::randomElement($this->flatten(PokemonData::getQuotes())));
+        }
+        if (array_key_exists($character, PokemonData::getQuotes())) {
+            $quotes = PokemonData::getQuotes();
+            return $this->generator->parse(static::randomElement($quotes[$character]));
+        }
+        return null;
+    }
+
+    /**
+     * Get random pokeball
+     * @return string
+     */
+    public static function pokeball(): string
+    {
+        return (string) static::randomElement(PokemonData::getPokeBalls());
+    }
+
+    /**
+     * @param array $array
+     * @return array
+     */
+    protected function flatten(array $array): array
+    {
+        $result = [];
+        foreach ($array as $item) {
+            if (false == is_array($item)) {
+                $result[] = $item;
+            } else {
+                $result = array_merge($result, array_values($item));
+            }
+        }
+        return $result;
+    }
+
 }

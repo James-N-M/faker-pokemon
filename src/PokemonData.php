@@ -29,6 +29,16 @@ class PokemonData
         return static::$characterNames;
     }
 
+    public static function getPokeBalls() : array
+    {
+        return static::$pokeballs;
+    }
+
+    public static function getQuotes() : array
+    {
+        return static::$quotes;
+    }
+
 	protected static $pokemonNames = ['Bulbasaur', 'Ivysaur', 'Venusaur', 'Charmander', 'Charmeleon', 'Charizard',
         'Squirtle', 'Wartortle', 'Blastoise', 'Caterpie', 'Metapod', 'Butterfree', 'Weedle', 'Kakuna', 'Beedrill', 'Pidgey',
         'Pidgeotto', 'Pidgeot', 'Rattata', 'Raticate', 'Spearow', 'Fearow', 'Ekans', 'Arbok', 'Pikachu', 'Raichu',
@@ -89,4 +99,28 @@ class PokemonData
         'Team Rocket Hideout', 'Underground Path', 'Underground Path', 'Vermilion City', 'Victory Road (Kanto)',
         'Viridian City', 'Viridian Forest',
     ];
+
+    protected static $quotes = [
+        'pikachu' => [
+            'piiiikkkkaaaaa chuuuuuuuuuuuuuuuuuuuuu',
+            'pika pika',
+            'pika'
+        ],
+        'oak' => [
+            '...ERM, Whats was his name now?',
+            'Your very own tale of grand adventure is about to unfold',
+            'Smell you later!',
+            'The bond you share with your pokemon is marvelous!'
+        ],
+        'ash' => [
+            'Im Ash, from the town of Pallet',
+            'Im destined to be the worlds number one Pokemon Master',
+            'The professor sure has a lot of Muk on his hands'
+        ]
+    ];
+
+    protected static $pokeballs = [
+        'Pokeball', 'Great Ball', 'Ultra Ball', 'Master Ball', 'Safari Ball'
+    ];
+
 }
