@@ -6,7 +6,6 @@ require '../../vendor/autoload.php';
 
 use Faker\Factory;
 use Faker\Generator;
-use Faker\Provider\PokemonData;
 use Faker\Provider\FakerPokemon;
 use PHPUnit\Framework\TestCase;
 
@@ -73,7 +72,7 @@ class FakerPokemonTest extends TestCase
     {
         $this->faker->seed(random_int(1, 9999));
 
-        $quote = $this->faker->quote('pikachu');
+        $quote = $this->faker->pokemonQuote('pikachu');
 
         $this->assertNotEmpty($quote);
     }

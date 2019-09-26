@@ -78,7 +78,7 @@ class FakerPokemon extends \Faker\Provider\Base
      * @param string|null $character
      * @return null|string
      */
-    public function quote(string $character = null)
+    public function pokemonQuote(string $character = null)
     {
         if (null === $character) {
             return $this->generator->parse(static::randomElement($this->flatten(PokemonData::getQuotes())));
@@ -115,5 +115,7 @@ class FakerPokemon extends \Faker\Provider\Base
         }
         return $result;
     }
+
+    // badges
 
 }
