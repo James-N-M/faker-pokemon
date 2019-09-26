@@ -33,5 +33,57 @@ class FakerPokemonTest extends TestCase
         $this->assertNotEmpty($pokemonName);
     }
 
+    public function testPokemonCharacterName()
+    {
+        $this->faker->seed(random_int(1, 9999));
 
+        $characterName = $this->faker->pokemonCharacterName();
+
+        $this->assertNotEmpty($characterName);
+    }
+
+    public function testPokemonType()
+    {
+        $this->faker->seed(random_int(1, 9999));
+
+        $type = $this->faker->pokemonType();
+
+        $this->assertNotEmpty($type);
+    }
+
+    public function testPokemonLocation()
+    {
+        $this->faker->seed(random_int(1, 9999));
+
+        $location = $this->faker->pokemonLocation();
+
+        $this->assertNotEmpty($location);
+    }
+
+    public function testPokemonMove()
+    {
+        $this->faker->seed(random_int(1, 9999));
+
+        $move = $this->faker->pokemonMove();
+
+        $this->assertNotEmpty($move);
+    }
+
+    public function testPokemonQuote()
+    {
+        $this->faker->seed(random_int(1, 9999));
+
+        $quote = $this->faker->quote('pikachu');
+
+        $this->assertNotEmpty($quote);
+    }
+
+    public function testPokeball()
+    {
+        $this->faker->seed(random_int(1, 9999));
+
+        $pokeball = $this->faker->pokeball();
+
+        $this->assertNotEmpty($pokeball);
+    }
 }
