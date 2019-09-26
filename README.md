@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/9950778/34909614-eab4956c-f8a4-11e7-974e-067cd19f6803.png" />
+    <img src="https://user-images.githubusercontent.com/6562688/65653704-2fdc1200-dfe4-11e9-908f-6ccfba3bedb2.png" />
     <br /><br />
     <a href="https://github.com/fzaninotto/Faker" target="_blank">Faker</a> extension for Pokemon Fans.
 </p>
