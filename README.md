@@ -7,7 +7,7 @@
 ## Installation
 
 ```php
-composer require 
+composer require james-n-m/faker-pokemon
 ```
 
 ## Basic usage
