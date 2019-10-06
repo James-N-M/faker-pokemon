@@ -39,6 +39,11 @@ class PokemonData
         return static::$quotes;
     }
 
+    public static function getItems(): array
+    {
+        return static::$items;
+    }
+
 	protected static $pokemonNames = ['Bulbasaur', 'Ivysaur', 'Venusaur', 'Charmander', 'Charmeleon', 'Charizard',
         'Squirtle', 'Wartortle', 'Blastoise', 'Caterpie', 'Metapod', 'Butterfree', 'Weedle', 'Kakuna', 'Beedrill', 'Pidgey',
         'Pidgeotto', 'Pidgeot', 'Rattata', 'Raticate', 'Spearow', 'Fearow', 'Ekans', 'Arbok', 'Pikachu', 'Raichu',
@@ -123,4 +128,12 @@ class PokemonData
         'Pokeball', 'Great Ball', 'Ultra Ball', 'Master Ball', 'Safari Ball'
     ];
 
+    protected static $items = [
+        'Antidote', 'Awakening', 'Burn Heal', 'Calcium', 'Carbos', 'Dire Hit', 'Elixir', 'Escape Rope', 'Ether',
+        'Fire Stone', 'Fresh Water', 'Full Heal', 'Full Restore', 'Guard Spec', 'HP Up', 'Hyper Potion', 'Ice Heal',
+        'Iron', 'Leaf Stone', 'Lemonade', 'Max Elixir', 'Max Ether', 'Max Potion', 'Max Repel', 'Max Revive',
+        'Moon Stone', 'Nugget', 'Paralyz Heal', 'Poke Doll', 'Potion', 'PP Up', 'Protein', 'Rare Candy', 'Repel',
+        'Revive', 'Soda Pop', 'Super Potion', 'Super Repel', 'Thunderstone', 'Water Stone', 'X Accuracy',
+        'X Attack', 'X Defend', 'X Special', 'X Speed'
+    ];
 }
