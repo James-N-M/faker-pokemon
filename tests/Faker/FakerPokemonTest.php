@@ -85,4 +85,13 @@ class FakerPokemonTest extends TestCase
 
         $this->assertNotEmpty($pokeball);
     }
+
+    public function testItem()
+    {
+        $this->faker->seed(random_int(1, 9999));
+
+        $item = $this->faker->item();
+
+        $this->assertNotEmpty($item);
+    }
 }
