@@ -136,4 +136,10 @@ class PokemonData
         'Revive', 'Soda Pop', 'Super Potion', 'Super Repel', 'Thunderstone', 'Water Stone', 'X Accuracy',
         'X Attack', 'X Defend', 'X Special', 'X Speed'
     ];
+
+    protected static $keyItems = [
+        'Bycycle', 'Bike Voucher', 'Card Key', 'Coin Case', 'Dome Fossil', 'EXP. All', 'Gold Teeth', 'Good Rod', 'Helix Fossil',
+        'Itemfinder', 'Lift Key', 'Oak\'s Parcel', 'Old Amber', 'Old Rod', 'Pokeflute', 'Pokedex', 'S.S. Ticket', 'Secret Key',
+        'Silph Scope', 'Super Rod', 'Town Map'
+    ];
 }
