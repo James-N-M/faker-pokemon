@@ -15,7 +15,7 @@ composer require james-n-m/faker-pokemon
 ### Laravel Factory
 ```php
 
-$factory->define(User::class, function (Faker $faker) {
+$factory->define(UserPokemon::class, function (Faker $faker) {
 
     $faker->addProvider(new \Faker\Provider\FakerPokemon($faker));
 
@@ -31,4 +31,34 @@ $faker->pokemonMove;            // Quick Attack
 $faker->pokemonQuote('oak')     // Your very own tale of grand adventure is about to unfold
 $faker->pokeball()              // Safari Ball
 
+```
+
+To then use this factory within a seeder file. First, create a seeder file:
+
+```
+php artisan make:seeder PokemonTableSeeder
+```
+
+Open the seeder file and add the following. Use the factory that we created above for the `App\UserPokemon` model:
+
+```php
+<?php
+
+use Illuminate\Database\Seeder;
+
+class PokemonTableSeeder extends Seeder
+{
+    public $create_count = 5;
+    
+    public function run()
+    {
+        factory(App\UserPokemon::class, $this->create_count)->create();
+    }
+}
+```
+
+Finally, run the seeder:
+
+```
+php artisan db:seed --class=PokemonTableSeeder
 ```
