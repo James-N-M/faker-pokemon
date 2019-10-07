@@ -110,6 +110,16 @@ class FakerPokemon extends \Faker\Provider\Base
     }
 
     /**
+     * Get random keyItem.
+     *
+     * @return string
+     */
+    public static function keyItem(): string
+    {
+        return (string) static::randomElement(PokemonData::getItems());
+    }
+
+    /**
      * @param array $array
      * @return array
      */
