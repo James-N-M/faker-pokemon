@@ -31,6 +31,7 @@ $faker->pokemonMove;            // Quick Attack
 $faker->pokemonQuote('oak')     // Your very own tale of grand adventure is about to unfold
 $faker->pokeball()              // Safari Ball
 $faker->item()                  // Rare Candy
+$faker->keyItem()               // Pokedex 
 
 ```
 
