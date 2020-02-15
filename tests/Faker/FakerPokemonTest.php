@@ -2,8 +2,6 @@
 
 namespace Faker\Tests\Provider;
 
-require '../../vendor/autoload.php';
-
 use Faker\Factory;
 use Faker\Generator;
 use Faker\Provider\FakerPokemon;

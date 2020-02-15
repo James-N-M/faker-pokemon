@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1581780495">
+  <project timestamp="1581780495">
+    <package name="Faker\Provider">
+      <file name="/home/vagrant/code/faker-pokemon/src/FakerPokemon.php">
+        <class name="Faker\Provider\FakerPokemon" namespace="Faker\Provider">
+          <metrics complexity="16" methods="12" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="23" coveredstatements="14" elements="35" coveredelements="23"/>
+        </class>
+        <line num="14" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="9"/>
+        <line num="16" type="stmt" count="9"/>
+        <line num="17" type="stmt" count="9"/>
+        <line num="23" type="method" name="pokemon" visibility="public" complexity="1" crap="2.00" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="35" type="method" name="pokemonName" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="37" type="stmt" count="1"/>
+        <line num="44" type="method" name="pokemonCharacterName" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="46" type="stmt" count="1"/>
+        <line num="54" type="method" name="pokemonType" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="56" type="stmt" count="1"/>
+        <line num="63" type="method" name="pokemonLocation" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="65" type="stmt" count="1"/>
+        <line num="72" type="method" name="pokemonMove" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="74" type="stmt" count="1"/>
+        <line num="81" type="method" name="pokemonQuote" visibility="public" complexity="3" crap="3.33" count="1"/>
+        <line num="83" type="stmt" count="1"/>
+        <line num="84" type="stmt" count="0"/>
+        <line num="86" type="stmt" count="1"/>
+        <line num="87" type="stmt" count="1"/>
+        <line num="88" type="stmt" count="1"/>
+        <line num="90" type="stmt" count="0"/>
+        <line num="97" type="method" name="pokeball" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="99" type="stmt" count="1"/>
+        <line num="107" type="method" name="item" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="109" type="stmt" count="1"/>
+        <line num="117" type="method" name="keyItem" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="119" type="stmt" count="1"/>
+        <line num="126" type="method" name="flatten" visibility="protected" complexity="3" crap="12.00" count="0"/>
+        <line num="128" type="stmt" count="0"/>
+        <line num="129" type="stmt" count="0"/>
+        <line num="130" type="stmt" count="0"/>
+        <line num="131" type="stmt" count="0"/>
+        <line num="133" type="stmt" count="0"/>
+        <line num="136" type="stmt" count="0"/>
+        <metrics loc="141" ncloc="81" classes="1" methods="12" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="23" coveredstatements="14" elements="35" coveredelements="23"/>
+      </file>
+      <file name="/home/vagrant/code/faker-pokemon/src/PokemonData.php">
+        <class name="Faker\Provider\PokemonData" namespace="Faker\Provider">
+          <metrics complexity="8" methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="16" coveredelements="16"/>
+        </class>
+        <line num="7" type="method" name="getPokemonNames" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="9" type="stmt" count="1"/>
+        <line num="12" type="method" name="getPokemonTypes" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="14" type="stmt" count="1"/>
+        <line num="17" type="method" name="getPokemonLocations" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="19" type="stmt" count="1"/>
+        <line num="22" type="method" name="getPokemonMoves" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="24" type="stmt" count="1"/>
+        <line num="27" type="method" name="getCharacterNames" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="29" type="stmt" count="1"/>
+        <line num="32" type="method" name="getPokeBalls" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="34" type="stmt" count="1"/>
+        <line num="37" type="method" name="getQuotes" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="39" type="stmt" count="1"/>
+        <line num="42" type="method" name="getItems" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="44" type="stmt" count="2"/>
+        <metrics loc="145" ncloc="145" classes="1" methods="8" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="16" coveredelements="16"/>
+      </file>
+    </package>
+    <metrics files="2" loc="286" ncloc="226" classes="2" methods="20" coveredmethods="17" conditionals="0" coveredconditionals="0" statements="31" coveredstatements="22" elements="51" coveredelements="39"/>
+  </project>
+</coverage>
