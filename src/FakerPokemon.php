@@ -10,17 +10,16 @@ class FakerPokemon extends \Faker\Provider\Base
      * FakerPokemon constructor.
      *
      * @param \Faker\Generator $generator
-    */
+     */
     public function __construct(Generator $generator)
     {
         parent::__construct($generator);
     }
 
     /**
-     * Get Pokemon object
-     *
+     * Get Pokemon object.
      */
-    public static function pokemon() : string
+    public static function pokemon(): string
     {
         // Create a pokemon object in memory
         // build up the object and return it
@@ -29,7 +28,7 @@ class FakerPokemon extends \Faker\Provider\Base
     }
 
     /**
-     * Get random pokemon name
+     * Get random pokemon name.
      * @return string
      */
     public static function pokemonName(): string
@@ -38,7 +37,7 @@ class FakerPokemon extends \Faker\Provider\Base
     }
 
     /**
-     * Get random pokemon character name
+     * Get random pokemon character name.
      * @return string
      */
     public static function pokemonCharacterName(): string
@@ -47,17 +46,17 @@ class FakerPokemon extends \Faker\Provider\Base
     }
 
     /**
-     * Get random pokemon type
+     * Get random pokemon type.
      *
      * @return string
      */
-    public static function pokemonType() : string
+    public static function pokemonType(): string
     {
         return (string) static::randomElement(PokemonData::getPokemonTypes());
     }
 
     /**
-     * Get random pokemon location
+     * Get random pokemon location.
      * @return string
      */
     public static function pokemonLocation(): string
@@ -66,7 +65,7 @@ class FakerPokemon extends \Faker\Provider\Base
     }
 
     /**
-     * Get random pokemon move
+     * Get random pokemon move.
      * @return string
      */
     public static function pokemonMove(): string
@@ -85,13 +84,13 @@ class FakerPokemon extends \Faker\Provider\Base
         }
         if (array_key_exists($character, PokemonData::getQuotes())) {
             $quotes = PokemonData::getQuotes();
+
             return $this->generator->parse(static::randomElement($quotes[$character]));
         }
-        return null;
     }
 
     /**
-     * Get random pokeball
+     * Get random pokeball.
      * @return string
      */
     public static function pokeball(): string
@@ -101,7 +100,7 @@ class FakerPokemon extends \Faker\Provider\Base
 
     /**
      * Get random item.
-     * 
+     *
      * @return string
      */
     public static function item(): string
@@ -133,9 +132,9 @@ class FakerPokemon extends \Faker\Provider\Base
                 $result = array_merge($result, array_values($item));
             }
         }
+
         return $result;
     }
 
     // badges
-
 }

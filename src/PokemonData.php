@@ -4,17 +4,17 @@ namespace Faker\Provider;
 
 class PokemonData
 {
-    public static function getPokemonNames() : array
+    public static function getPokemonNames(): array
     {
         return static::$pokemonNames;
     }
 
-    public static function getPokemonTypes() : array
+    public static function getPokemonTypes(): array
     {
         return static::$pokemonTypes;
     }
 
-    public static function getPokemonLocations() : array
+    public static function getPokemonLocations(): array
     {
         return static::$pokemonLocations;
     }
@@ -24,17 +24,17 @@ class PokemonData
         return static::$pokemonMoves;
     }
 
-    public static function getCharacterNames() : array
+    public static function getCharacterNames(): array
     {
         return static::$characterNames;
     }
 
-    public static function getPokeBalls() : array
+    public static function getPokeBalls(): array
     {
         return static::$pokeballs;
     }
 
-    public static function getQuotes() : array
+    public static function getQuotes(): array
     {
         return static::$quotes;
     }
@@ -44,7 +44,7 @@ class PokemonData
         return static::$items;
     }
 
-	protected static $pokemonNames = ['Bulbasaur', 'Ivysaur', 'Venusaur', 'Charmander', 'Charmeleon', 'Charizard',
+    protected static $pokemonNames = ['Bulbasaur', 'Ivysaur', 'Venusaur', 'Charmander', 'Charmeleon', 'Charizard',
         'Squirtle', 'Wartortle', 'Blastoise', 'Caterpie', 'Metapod', 'Butterfree', 'Weedle', 'Kakuna', 'Beedrill', 'Pidgey',
         'Pidgeotto', 'Pidgeot', 'Rattata', 'Raticate', 'Spearow', 'Fearow', 'Ekans', 'Arbok', 'Pikachu', 'Raichu',
         'Sandshrew', 'Sandslash', 'Nidorina', 'Nidoqueen', 'Nidorino', 'Nidoking', 'Clefairy', 'Clefable', 'Vulpix',
@@ -62,14 +62,14 @@ class PokemonData
         'Dragonite', 'Mewtwo', 'Mew',
     ];
 
-    protected static $characterNames = ['Ash Ketchum','Gary Oak', 'Professor Oak', 'Brock', 'Misty'];
+    protected static $characterNames = ['Ash Ketchum', 'Gary Oak', 'Professor Oak', 'Brock', 'Misty'];
 
-	protected static $pokemonTypes = [
-	  'Normal', 'Fire', 'Water', 'Electric', 'Grass', 'Ice', 'Fighting', 'Poison', 'Ground', 'Flying', 'Psychic',
+    protected static $pokemonTypes = [
+        'Normal', 'Fire', 'Water', 'Electric', 'Grass', 'Ice', 'Fighting', 'Poison', 'Ground', 'Flying', 'Psychic',
         'Bug', 'Rock', 'Ghost', 'Dragon',
     ];
 
-	protected static $pokemonMoves = [
+    protected static $pokemonMoves = [
         'Absorb', 'Acid', 'Acid Armor', 'Agility', 'Amnesia', 'Aurora Beam', 'Barrage',
         'Barrier', 'Bide', 'Bind', 'Bite', 'Blizzard', 'Body Slam', 'Bone Club', 'Bonemerang',
         'Bubble', 'Bubble Beam', 'Clamp', 'Comet Punch', 'Confuse Ray', 'Confusion', 'Constrict',
@@ -94,8 +94,8 @@ class PokemonData
         'Vice Grip', 'Vine Whip', 'Water Gun', 'Waterfall', 'Whirlwind', 'Wing Attack', 'Withdraw', 'Wrap',
     ];
 
-	protected static $pokemonLocations = [
-	  'Kanto', 'Celadon City', 'Celadon Condominiums', 'Celadon Department Store', 'Celadon Game Corner',
+    protected static $pokemonLocations = [
+        'Kanto', 'Celadon City', 'Celadon Condominiums', 'Celadon Department Store', 'Celadon Game Corner',
         'Cerulean Cave', 'Cerulean City', 'Cinnabar Island', 'Cinnabar Lab', 'Digletts Cave', 'Fighting Dojo',
         'Fuchsia City', 'HomeTown', 'Indigo Plateau', 'Kanto Power Plant', 'Kanto Safari Zone', 'Lavender Town',
         'Mt. Moon', 'Pallet Town', 'Pewter City', 'Pewter Museum of Science', 'Players house',
@@ -109,23 +109,23 @@ class PokemonData
         'pikachu' => [
             'piiiikkkkaaaaa chuuuuuuuuuuuuuuuuuuuuu',
             'pika pika',
-            'pika'
+            'pika',
         ],
         'oak' => [
             '...ERM, Whats was his name now?',
             'Your very own tale of grand adventure is about to unfold',
             'Smell you later!',
-            'The bond you share with your pokemon is marvelous!'
+            'The bond you share with your pokemon is marvelous!',
         ],
         'ash' => [
             'Im Ash, from the town of Pallet',
             'Im destined to be the worlds number one Pokemon Master',
-            'The professor sure has a lot of Muk on his hands'
-        ]
+            'The professor sure has a lot of Muk on his hands',
+        ],
     ];
 
     protected static $pokeballs = [
-        'Pokeball', 'Great Ball', 'Ultra Ball', 'Master Ball', 'Safari Ball'
+        'Pokeball', 'Great Ball', 'Ultra Ball', 'Master Ball', 'Safari Ball',
     ];
 
     protected static $items = [
@@ -134,12 +134,12 @@ class PokemonData
         'Iron', 'Leaf Stone', 'Lemonade', 'Max Elixir', 'Max Ether', 'Max Potion', 'Max Repel', 'Max Revive',
         'Moon Stone', 'Nugget', 'Paralyz Heal', 'Poke Doll', 'Potion', 'PP Up', 'Protein', 'Rare Candy', 'Repel',
         'Revive', 'Soda Pop', 'Super Potion', 'Super Repel', 'Thunderstone', 'Water Stone', 'X Accuracy',
-        'X Attack', 'X Defend', 'X Special', 'X Speed'
+        'X Attack', 'X Defend', 'X Special', 'X Speed',
     ];
 
     protected static $keyItems = [
         'Bycycle', 'Bike Voucher', 'Card Key', 'Coin Case', 'Dome Fossil', 'EXP. All', 'Gold Teeth', 'Good Rod', 'Helix Fossil',
         'Itemfinder', 'Lift Key', 'Oak\'s Parcel', 'Old Amber', 'Old Rod', 'Pokeflute', 'Pokedex', 'S.S. Ticket', 'Secret Key',
-        'Silph Scope', 'Super Rod', 'Town Map'
+        'Silph Scope', 'Super Rod', 'Town Map',
     ];
 }
